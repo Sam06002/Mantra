@@ -25,13 +25,14 @@
     flex-direction: column;
 }
 
-.slideShowMain{
-    display: flex;
-    overflow-x: scroll;
-    width: 300%;
-}
+@media (max-width: 576px) {
+    .heading{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 
-.slides{
-    width: 100vw;
-    height: 100vh;
+    .subHeading{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 }

@@ -2,22 +2,56 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import s from '../styles/home/home.module.css'
 import Cards from '../components/index/cards'
 import Clients from '../components/index/clients'
+import { useEffect } from 'react'
 
 export default function Home() {
+  useEffect(() => {
+    const one = document.getElementById("one")
+    const two = document.getElementById("two")
+    const slideOne = document.getElementById("slideOne")
+    const slideTwo = document.getElementById("slideTwo")
+
+    one.addEventListener("click", () => {
+      slideTwo.classList.remove("active")
+      slideOne.classList.add("active")
+      // slideTwo.classList.add("fadeIn")
+      slideOne.classList.add("fadeIn")
+    })
+    
+    two.addEventListener("click", () => {
+      slideOne.classList.remove("active")
+      slideTwo.classList.add("active")
+      slideTwo.classList.add("fadeIn")
+      slideTwo.classList.add("fadeOut")
+    })
+
+  }, [])
   return (
     <div>
 
-      <div className={s.slideShowMain}>
-        <div className={s.slides}>
-          <h1>one</h1>
-        </div>
-        <div className={s.slides}>
-          <h1>Two</h1>
 
-        </div>
-        <div className={s.slides}>
-          <h1>Three</h1>
+      <div id="myCarousel" className="carousel slide carousel-fade" data-ride="carousel">
 
+        <ol className="carousel-indicators">
+          <li id="one" data-target="#myCarousel" data-slide-to="0" className="active">1</li>
+          <li id="two" data-target="#myCarousel" data-slide-to="1">2</li>
+        </ol>
+
+        <div className="carousel-inner">
+
+
+          <div id="slideOne" className="carousel-item active">
+            <div className="container-md slide">
+              <h1>How integrated is your AI Strategy with your Organization Goals</h1>
+              <img id="img" src="https://mantra.ai/wp-content/themes/mantra_light_theme/images/carousel-3.png" />
+
+            </div>
+          </div>
+          <div id="slideTwo" className="carousel-item">
+            <div className="container-md slide">
+              <h1>hello</h1>
+            </div>
+          </div>
         </div>
 
       </div>
