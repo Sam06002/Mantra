@@ -1,0 +1,25 @@
+.heading{
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+.subHeading{
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    display: block;
+    font-size: 1.5rem;
+}
+
+.img{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.con{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

@@ -1,0 +1,11 @@
+.con{
+    border: solid 1px black;
+}
+
+.img{
+    width: 90%;
+}
+
+.hidden{
+    display: none;
+}
