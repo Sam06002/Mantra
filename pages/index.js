@@ -6,6 +6,22 @@ import Clients from '../components/index/clients'
 export default function Home() {
   return (
     <div>
+
+      <div className={s.slideShowMain}>
+        <div className={s.slides}>
+          <h1>one</h1>
+        </div>
+        <div className={s.slides}>
+          <h1>Two</h1>
+
+        </div>
+        <div className={s.slides}>
+          <h1>Three</h1>
+
+        </div>
+
+      </div>
+      
       <div className="container-md">
         <h1 className={s.heading}>With an insight into consulting for various industries and solving over 20 interesting problems leveraging AI</h1>
         <p className={s.subHeading}>we offer evolving Enterprises two key services</p>

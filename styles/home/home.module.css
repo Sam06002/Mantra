@@ -24,3 +24,14 @@
     justify-content: center;
     flex-direction: column;
 }
+
+.slideShowMain{
+    display: flex;
+    overflow-x: scroll;
+    width: 300%;
+}
+
+.slides{
+    width: 100vw;
+    height: 100vh;
+}
