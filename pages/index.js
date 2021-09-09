@@ -11,7 +11,7 @@ export default function Home() {
         <p className={s.subHeading}>we offer evolving Enterprises two key services</p>
         <Cards />
         <p className={s.subHeading}>Our Capablities in Different Aspects of AI</p>
-        <img class={"img-responsive d-block " + s.img} src="https://mantra.ai/wp-content/themes/mantra_light_theme/images/chart2.png" width="70%" />
+        <img className={"img-responsive d-block " + s.img} src="https://mantra.ai/wp-content/themes/mantra_light_theme/images/chart2.png" width="70%" />
 
       </div>
       <div className={"container-md "+s.con}>
