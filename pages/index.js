@@ -78,7 +78,7 @@ export default function Home() {
         <Clients />
         <Clients />
       </div>      
-    <h1 style={{textAlign: "center"}}>@A Spade Work Production</h1>
+    <h4 style={{textAlign: "center"}}>@A Spade Work Production</h4>
     </div>
   )
 }
