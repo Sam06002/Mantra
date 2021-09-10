@@ -75,6 +75,18 @@ body{
   width: 60%;
 }
 
+.bar{
+  width: 50px;
+  height: 5px;
+  background-color: rgb(184, 184, 179);
+  margin: 1px;
+}
+
+.barActive{
+  background-color: #007aff;
+
+}
+
 @media (max-width: 576px) {
   .slide{
     flex-direction: column-reverse;

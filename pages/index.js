@@ -3,6 +3,7 @@ import s from '../styles/home/home.module.css'
 import Cards from '../components/index/cards'
 import Clients from '../components/index/clients'
 import { useEffect } from 'react'
+import NavBar from '../components/navBar'
 
 export default function Home() {
   useEffect(() => {
@@ -10,12 +11,18 @@ export default function Home() {
     const two = document.getElementById("two")
     const slideOne = document.getElementById("slideOne")
     const slideTwo = document.getElementById("slideTwo")
+    const barOne = document.getElementsByClassName("bar")[0]
+    const barTwo = document.getElementsByClassName("bar")[1]
+
+
 
     one.addEventListener("click", () => {
       slideTwo.classList.remove("active")
       slideOne.classList.add("active")
       // slideTwo.classList.add("fadeIn")
       slideOne.classList.add("fadeIn")
+      barOne.classList.add("barActive")
+      barTwo.classList.remove("barActive")
     })
     
     two.addEventListener("click", () => {
@@ -23,18 +30,20 @@ export default function Home() {
       slideTwo.classList.add("active")
       slideTwo.classList.add("fadeIn")
       slideTwo.classList.add("fadeOut")
+      barTwo.classList.add("barActive")
+      barOne.classList.remove("barActive")
     })
 
   }, [])
   return (
     <div>
-
+      <NavBar />
 
       <div id="myCarousel" className="carousel slide carousel-fade" data-ride="carousel">
 
         <ol className="carousel-indicators">
-          <li id="one" data-target="#myCarousel" data-slide-to="0" className="active">1</li>
-          <li id="two" data-target="#myCarousel" data-slide-to="1">2</li>
+          <li id="one" data-target="#myCarousel" data-slide-to="0" className="active"><div className="bar barActive"></div></li>
+          <li id="two" data-target="#myCarousel" data-slide-to="1"><div className="bar"></div></li>
         </ol>
 
         <div className="carousel-inner">

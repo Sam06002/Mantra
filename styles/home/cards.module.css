@@ -1,8 +1,9 @@
 .con{
     display: flex;
+    margin: 5%;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 880px) {
     .con{
         flex-direction: column;
     }

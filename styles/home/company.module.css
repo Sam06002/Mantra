@@ -8,6 +8,10 @@
     justify-content: center;
 }
 
+.subCon{
+    /* background-color: black; */
+}
+
 .subCard{
     margin: 1%;
     padding: 0;
@@ -16,6 +20,9 @@
 
 .img{
     width: 90%;
+    filter: grayscale(100%);
+
+    transition: 0.5s;
 }
 
 .hidden{
@@ -33,4 +40,9 @@
     height: auto;
     box-shadow: -8px 5px 10px -3px rgb(180, 174, 174);
     transition: 0.3s;
+}
+
+.con:hover .img{
+    filter: grayscale(0%);
+    transition: 0.5s;
 }
