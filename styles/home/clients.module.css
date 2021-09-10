@@ -1,3 +1,9 @@
 .con{
     display: flex;
 }
+
+@media (max-width: 576px) {
+    .con{
+        flex-direction: column;
+    }
+}
