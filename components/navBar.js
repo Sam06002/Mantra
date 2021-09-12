@@ -15,6 +15,7 @@ const NavBar = () => {
                 document.getElementsByClassName(s.item)[2].style.color = "white"
                 document.getElementsByClassName(s.item)[3].style.color = "white"
                 document.getElementsByClassName(s.item)[4].style.color = "white"
+                document.getElementById("NavHeading").style.color = "white"
             }else{
                 con.style.background = "white"
                 document.getElementsByClassName(s.item)[0].style.color = "black"
@@ -38,7 +39,7 @@ const NavBar = () => {
 
         <nav className="navbar navbar-expand-sm">
                 <div className="container-md">
-                    <a className="navbar-brand text-dark" id="test">MANTRA</a>
+                    <a className="navbar-brand text-dark" id="NavHeading">SaiPuram</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><img width="50px" src="/spade.png" /></button>
 
                     <div className="collapse navbar-collapse" id="navmenu">
