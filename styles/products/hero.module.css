@@ -1,0 +1,13 @@
+.con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 50%; */
+}
+
+.heading{
+    width: 42%;
+    margin-right: 2%;
+    /* font-size: 1.4rem; */
+    /* margin-right: 15vw; */
+}

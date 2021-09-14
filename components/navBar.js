@@ -44,7 +44,7 @@ const NavBar = () => {
 
                     <div className="collapse navbar-collapse" id="navmenu">
                         <ul className="navbar-nav ms-auto">
-                            <li className={"nav-item "}><a className={"nav-link "+s.item}>About</a></li>
+                            <li className={"nav-item "}><a href="./products" className={"nav-link "+s.item}>Products</a></li>
                             <li className={"nav-item "}><a className={"nav-link "+s.item}>Resume</a></li>
                             <li className={"nav-item "}><a className={"nav-link "+s.item}>Reviews</a></li>
                             <li className={"nav-item "}><a className={"nav-link "+s.item}>Projects</a></li>
