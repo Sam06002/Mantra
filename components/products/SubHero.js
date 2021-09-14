@@ -1,10 +1,20 @@
+import { useEffect, useState } from 'react'
 import style from '../../styles/products/SubHero.module.css'
 import Product from './product'
 
-const SubHero = () => {
+const SubHero = ({wave}) => {
+    const [styling, setStyle] = useState({})
+    useEffect(() => {
+        if(wave){
+            setStyle({
+                display: "none"
+            })
+        }
+
+    }, [])
     return(
         <div className={style.con}>
-            <img className={style.wave} src="./wave.png" />
+            <img style={styling} className={style.wave} src="./wave.png" />
             <Product />
         </div>
     )

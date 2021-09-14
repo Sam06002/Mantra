@@ -15,6 +15,7 @@ export default function Home() {
         <Hero />
         <SubHero />
         <SecondaryProducts />
+        <SubHero wave={true} />
         <h4 style={{textAlign: "center"}}>@A Spade Work Production</h4>
     </div>
   )
