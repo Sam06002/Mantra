@@ -8,3 +8,7 @@
     width: 100%;
     transform: rotate(180deg);
 }
+
+@media (max-width: 576px) {
+    
+}

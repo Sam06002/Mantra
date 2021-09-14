@@ -36,3 +36,19 @@
     margin: 0;
     padding: 0;
 }
+
+
+@media (max-width: 576px) {
+    .con{
+        flex-direction: column;
+    }
+    .detail{
+        width: 100%;
+        /* margin: 20%; */
+        margin: 0;
+        padding: 0;
+        margin: 20%;
+        /* margin-left: 5%; */
+        margin-right: 15%;
+    }
+}
