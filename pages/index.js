@@ -14,6 +14,17 @@ export default function Home() {
     const barOne = document.getElementsByClassName("bar")[0]
     const barTwo = document.getElementsByClassName("bar")[1]
 
+    
+    window.onmousemove = (e) => {
+      const dance = document.getElementById("dancingText")
+      const y = (window.innerHeight - e.clientY * 5) / 100
+      const x = (window.innerWidth - e.clientX * 5) / 100
+      dance.style.transform = `translateX(${x}px) translateY(${y}px)`
+      console.log(x);
+      console.log(dance);
+      // console.log(e);
+    }
+
 
 
     one.addEventListener("click", () => {
@@ -58,7 +69,7 @@ export default function Home() {
           </div>
           <div id="slideTwo" className="carousel-item">
             <div className="container-md slide">
-              <h1>hello</h1>
+              <h1 id="dancingText">hello</h1>
             </div>
           </div>
         </div>
