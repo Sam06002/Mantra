@@ -51,14 +51,14 @@ export default function Home() {
 
           <div id="slideOne" className="carousel-item active">
             <div className="container-md slide">
-              <h1>How integrated is your AI Strategy with your Organization Goals</h1>
+              <h1>How do you leverage data science to boost your business goals</h1>
               <img id="img" src="https://mantra.ai/wp-content/themes/mantra_light_theme/images/carousel-3.png" />
 
             </div>
           </div>
           <div id="slideTwo" className="carousel-item">
             <div className="container-md slide">
-              <h1>hello</h1>
+              <h1>Artificial Intelligence based solutions to revolutionized and accelerate the biomedical research</h1>
             </div>
           </div>
         </div>
@@ -66,7 +66,7 @@ export default function Home() {
       </div>
       
       <div className="container-md">
-        <h1 className={s.heading}>With an insight into consulting for various industries and solving over 20 interesting problems leveraging AI</h1>
+        <h2 className={s.heading}>in-silico drug target and biomarker identification using multi-layer disease knowledge graph</h2>
         <p className={s.subHeading}>we offer evolving Enterprises two key services</p>
         <Cards />
         <p className={s.subHeading}>Our Capablities in Different Aspects of AI</p>
@@ -78,7 +78,7 @@ export default function Home() {
         <Clients />
         <Clients />
       </div>      
-    <h4 style={{textAlign: "center"}}>@A Spade Work Production</h4>
+    <h6 style={{textAlign: "center"}}>@A Spade Work Production</h6>
     </div>
   )
 }
