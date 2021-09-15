@@ -38,16 +38,16 @@ const NavBar = () => {
 
         <nav className="navbar navbar-expand-sm">
                 <div className="container-md">
-                    <a className="navbar-brand text-dark" id="test">MANTRA</a>
+                    <a className="navbar-brand text-dark" id="test">SaiPuram</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><img width="50px" src="/spade.png" /></button>
 
                     <div className="collapse navbar-collapse" id="navmenu">
                         <ul className="navbar-nav ms-auto">
-                            <li className={"nav-item "}><a className={"nav-link "+s.item}>About</a></li>
-                            <li className={"nav-item "}><a className={"nav-link "+s.item}>Resume</a></li>
-                            <li className={"nav-item "}><a className={"nav-link "+s.item}>Reviews</a></li>
-                            <li className={"nav-item "}><a className={"nav-link "+s.item}>Projects</a></li>
-                            <li className={"nav-item "}><a className={"nav-link "+s.item}>Contact Me</a></li>
+                            <li className={"nav-item "}><a className={"nav-link "+s.item}>Home</a></li>
+                            <li className={"nav-item "}><a className={"nav-link "+s.item}>Company</a></li>
+                            <li className={"nav-item "}><a className={"nav-link "+s.item}>Knowledge Hub</a></li>
+                            <li className={"nav-item "}><a href="./products" className={"nav-link "+s.item}>Technology</a></li>
+                            <li className={"nav-item "}><a className={"nav-link "+s.item}>Contact Us</a></li>
                         </ul>
                     </div>
                 </div>

@@ -1,0 +1,14 @@
+.con{
+    /* height: 400px; */
+    background-color: #f4f5f7;
+    /* margin: 5%; */
+}
+
+.wave{
+    width: 100%;
+    transform: rotate(180deg);
+}
+
+@media (max-width: 576px) {
+    
+}
